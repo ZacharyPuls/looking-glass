@@ -203,6 +203,9 @@ abstract class Router {
       case 'vyos':
       case 'edgeos':
         return new Vyatta($config, $router_config, $id, $requester);
+        
+      case 'sros':
+        return new SrOS($config, $router_config, $id, $requester);
 
       default:
         print('Unknown router type "'.$router_config['type'].'".');
