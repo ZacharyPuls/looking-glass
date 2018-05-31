@@ -30,6 +30,7 @@ require_once('openbgpd.php');
 require_once('quagga.php');
 require_once('frr.php');
 require_once('vyatta.php');
+require_once('sros.php');
 require_once('includes/utils.php');
 require_once('auth/authentication.php');
 
